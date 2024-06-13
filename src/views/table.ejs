@@ -1,0 +1,26 @@
+<div class="container px-5 main-tab" style="max-height: 500px; overflow: auto">
+  <%if (urls.length !== 0) { %>
+  <table class="table table-dark rounded-3 table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">ID</th>
+        <th scope="col">Shorten</th>
+        <th scope="col">Clicks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% urls?.forEach((url,index) => { %>
+      <tr>
+        <th scope="row"><%= (index + 1) %></th>
+        <td><%= url.urlId %></td>
+        <td><%= `localhost:3000/api/${url.urlId}` %></td>
+        <td><%= url.clicks %></td>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+  <% } else { %>
+  <h1>(Nothing Found)! </h1>
+  <% } %>
+</div>

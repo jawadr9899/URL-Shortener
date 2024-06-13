@@ -1,0 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+.outer-container,.main-tab{
+  padding: 0 5rem!important;
+
+}
+
+.main-tab::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.main-tab::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+.login_form{
+  background-color:#b5afaf36!important;
+}

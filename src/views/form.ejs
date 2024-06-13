@@ -1,0 +1,24 @@
+  <form id="main_f" action="/api" method="POST">
+    <div class="row justify-content-center mb-5">
+      <div class="col-8">
+        <input
+          name="link"
+          class="form-control"
+          style="box-shadow: none"
+          type="text"
+          required
+          minlength="10"
+          placeholder="URL"
+         id="_link"
+        />
+      </div>
+      <div class="col-1">
+        <button type="submit" class="btn btn-secondary">Shorten</button>
+      </div>
+      <div class="col-1">
+        <button id="clear_urls" class="btn btn-outline-light" type="submit">
+          Clear
+        </button>
+      </div>
+    </div>
+  </form>
